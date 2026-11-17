@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Copa do Brasil - História dos Campeões</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <header>
+
+        <div class="logo">
+            🏆 Copa do Brasil
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#campeoes">Campeões</a>
+            <a href="#ranking">Ranking</a>
+            <a href="#contato">Contato</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+        
+        <div class="acessibilidade">
+
+            <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
+                A+
+            </button>
+
+            <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">
+                A-
+            </button>
+
+            <button onclick="alternarTema()" aria-label="Alterar entre modo claro e escuro">
+                🌙
+            </button>
+
+        </div>
+
+    </header>
+
+
+    
+    <main>
+
+        
+        <section id="inicio" class="hero">
+
+            <div class="hero-texto">
+
+                <h1>A História da Copa do Brasil!</h1>
+
+                <p>
+                    Conheça a história da Copa do Brasil, descubra todos os
+                    clubes campeões e veja quais equipes conquistaram
+                    mais títulos.
+                </p>
+
+                <a href="#campeoes" class="botao">
+                    Conhecer os campeões
+                </a>
+
+            </div>
+
+        </section>
+
+
+        
+<section class="carrossel-section">
+    <div class="carrossel">
+
+        <div class="slide ativo">
+            <img src="img/maracana.webp"
+                 alt="Estádio do Maracanã">
+            <div class="texto-slide">
+                <h2>🏆 Copa do Brasil</h2>
+                <p>Conheça a história dos campeões da competição.</p>
+            </div>
+        </div>
+
+        
+        <div class="slide">
+            <img src="img/gremio.jpg"
+                 alt="Grêmio levantando a taça da Copa do Brasil 2016">
+            <div class="texto-slide">
+                <h2>Grandes decisões</h2>
+                <p>Relembre  momentos marcantes.</p>
+            </div>
+        </div>
+
+        <
+        <div class="slide">
+            <img src="img/taca.webp"
+                 alt="Taça da Copa do Brasil">
+            <div class="texto-slide">
+                <h2>História dos campeões</h2>
+                <p>Descubra quais clubes conquistaram a taça.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="botoes-carrossel">
+        <button onclick="slideAnterior()">❮</button>
+        <button onclick="proximoSlide()">❯</button>
+    </div>
+</section>
+
+
+    
+        <section id="campeoes" class="secao">
+
+            <h2>Histórico de Campeões</h2>
+
+            <p class="descricao">
+                Pesquise pelo nome de um clube ou pelo ano da conquista.
+            </p>
+
+            <input
+                type="text"
+                id="pesquisa"
+                placeholder="Digite o nome do clube ou o ano..."
+                onkeyup="pesquisarCampeao()"
+                aria-label="Pesquisar campeão por clube ou ano"
+            >
+
+            <div id="lista-campeoes" class="cards">
+
+                <article class="card">
+                    <h3>1989</h3>
+                    <p><strong>Campeão:</strong> Grêmio</p>
+                    <p><strong>Vice:</strong> Sport</p>
+                </article>
+
+                <article class="card">
+                    <h3>1990</h3>
+                    <p><strong>Campeão:</strong> Flamengo</p>
+                    <p><strong>Vice:</strong> Goiás</p>
+                </article>
+
+                <article class="card">
+                    <h3>1991</h3>
+                    <p><strong>Campeão:</strong> Criciúma</p>
+                    <p><strong>Vice:</strong> Grêmio</p>
+                </article>
+
+                <article class="card">
+                    <h3>1992</h3>
+                    <p><strong>Campeão:</strong> Internacional</p>
+                    <p><strong>Vice:</strong> Fluminense</p>
+                </article>
+
+                <article class="card">
+                    <h3>1993</h3>
+                    <p><strong>Campeão:</strong> Cruzeiro</p>
+                    <p><strong>Vice:</strong> Grêmio</p>
+                </article>
+
+                <article class="card">
+                    <h3>1994</h3>
+                    <p><strong>Campeão:</strong> Grêmio</p>
+                    <p><strong>Vice:</strong> Ceará</p>
+                </article>
+
+                <article class="card">
+                    <h3>1995</h3>
+                    <p><strong>Campeão:</strong> Corinthians</p>
+                    <p><strong>Vice:</strong> Grêmio</p>
+                </article>
+
+                <article class="card">
+                    <h3>1996</h3>
+                    <p><strong>Campeão:</strong> Cruzeiro</p>
+                    <p><strong>Vice:</strong> Palmeiras</p>
+                </article>
+
+                <article class="card">
+                    <h3>1997</h3>
+                    <p><strong>Campeão:</strong> Grêmio</p>
+                    <p><strong>Vice:</strong> Flamengo</p>
+                </article>
+
+                <article class="card">
+                    <h3>1998</h3>
+                    <p><strong>Campeão:</strong> Palmeiras</p>
+                    <p><strong>Vice:</strong> Cruzeiro</p>
+                </article>
+
+                <article class="card">
+                    <h3>1999</h3>
+                    <p><strong>Campeão:</strong> Juventude</p>
+                    <p><strong>Vice:</strong> Botafogo</p>
+                </article>
+
+                <article class="card">
+                    <h3>2000</h3>
+                    <p><strong>Campeão:</strong> Cruzeiro</p>
+                    <p><strong>Vice:</strong> São Paulo</p>
+                </article>
+
+                <article class="card">
+                    <h3>2001</h3>
+                    <p><strong>Campeão:</strong> Grêmio</p>
+                    <p><strong>Vice:</strong> Corinthians</p>
+                </article>
+
+                <article class="card">
+                    <h3>2002</h3>
+                    <p><strong>Campeão:</strong> Corinthians</p>
+                    <p><strong>Vice:</strong> Brasiliense</p>
+                </article>
+
+                <article class="card">
+                    <h3>2003</h3>
+                    <p><strong>Campeão:</strong> Cruzeiro</p>
+                    <p><strong>Vice:</strong> Flamengo</p>
+                </article>
+
+                <article class="card">
+                    <h3>2004</h3>
+                    <p><strong>Campeão:</strong> Santo André</p>
+                    <p><strong>Vice:</strong> Flamengo</p>
+                </article>
+
+                <article class="card">
+                    <h3>2005</h3>
+                    <p><strong>Campeão:</strong> Paulista</p>
+                    <p><strong>Vice:</strong> Fluminense</p>
+                </article>
+
+                <article class="card">
+                    <h3>2006</h3>
+                    <p><strong>Campeão:</strong> Flamengo</p>
+                    <p><strong>Vice:</strong> Vasco</p>
+                </article>
+
+                <article class="card">
+                    <h3>2007</h3>
+                    <p><strong>Campeão:</strong> Fluminense</p>
+                    <p><strong>Vice:</strong> Figueirense</p>
+                </article>
+
+                <article class="card">
+                    <h3>2008</h3>
+                    <p><strong>Campeão:</strong> Sport</p>
+                    <p><strong>Vice:</strong> Corinthians</p>
+                </article>
+
+                <article class="card">
+                    <h3>2009</h3>
+                    <p><strong>Campeão:</strong> Corinthians</p>
+                    <p><strong>Vice:</strong> Internacional</p>
+                </article>
+
+                <article class="card">
+                    <h3>2010</h3>
+                    <p><strong>Campeão:</strong> Santos</p>
+                    <p><strong>Vice:</strong> Vitória</p>
+                </article>
+
+                <article class="card">
+                    <h3>2011</h3>
+                    <p><strong>Campeão:</strong> Vasco</p>
+                    <p><strong>Vice:</strong> Coritiba</p>
+                </article>
+
+                <article class="card">
+                    <h3>2012</h3>
+                    <p><strong>Campeão:</strong> Palmeiras</p>
+                    <p><strong>Vice:</strong> Coritiba</p>
+                </article>
+
+                <article class="card">
+                    <h3>2013</h3>
+                    <p><strong>Campeão:</strong> Flamengo</p>
+                    <p><strong>Vice:</strong> Athletico-PR</p>
+                </article>
+
+                <article class="card">
+                    <h3>2014</h3>
+                    <p><strong>Campeão:</strong> Atlético-MG</p>
+                    <p><strong>Vice:</strong> Cruzeiro</p>
+                </article>
+
+                <article class="card">
+                    <h3>2015</h3>
+                    <p><strong>Campeão:</strong> Palmeiras</p>
+                    <p><strong>Vice:</strong> Santos</p>
+                </article>
+
+                <article class="card">
+                    <h3>2016</h3>
+                    <p><strong>Campeão:</strong> Grêmio</p>
+                    <p><strong>Vice:</strong> Atlético-MG</p>
+                </article>
+
+                <article class="card">
+                    <h3>2017</h3>
+                    <p><strong>Campeão:</strong> Cruzeiro</p>
+                    <p><strong>Vice:</strong> Flamengo</p>
+                </article>
+
+                <article class="card">
+                    <h3>2018</h3>
+                    <p><strong>Campeão:</strong> Cruzeiro</p>
+                    <p><strong>Vice:</strong> Corinthians</p>
+                </article>
+
+                <article class="card">
+                    <h3>2019</h3>
+                    <p><strong>Campeão:</strong> Athletico-PR</p>
+                    <p><strong>Vice:</strong> Internacional</p>
+                </article>
+
+                <article class="card">
+                    <h3>2020</h3>
+                    <p><strong>Campeão:</strong> Palmeiras</p>
+                    <p><strong>Vice:</strong> Grêmio</p>
+                </article>
+
+                <article class="card">
+                    <h3>2021</h3>
+                    <p><strong>Campeão:</strong> Atlético-MG</p>
+                    <p><strong>Vice:</strong> Athletico-PR</p>
+                </article>
+
+                <article class="card">
+                    <h3>2022</h3>
+                    <p><strong>Campeão:</strong> Flamengo</p>
+                    <p><strong>Vice:</strong> Corinthians</p>
+                </article>
+
+                <article class="card">
+                    <h3>2023</h3>
+                    <p><strong>Campeão:</strong> São Paulo</p>
+                    <p><strong>Vice:</strong> Flamengo</p>
+                </article>
+
+                <article class="card">
+                    <h3>2024</h3>
+                    <p><strong>Campeão:</strong> Flamengo</p>
+                    <p><strong>Vice:</strong> Atlético-MG</p>
+                </article>
+
+                <article class="card">
+                    <h3>2025</h3>
+                    <p><strong>Campeão:</strong> Corinthians</p>
+                    <p><strong>Vice:</strong> Vasco</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        
+        <section id="ranking" class="secao">
+
+            <h2>Ranking de Títulos</h2>
+
+            <div class="ranking">
+
+                <div class="ranking-item">
+                    <span> Cruzeiro</span>
+                    <strong>6 títulos</strong>
+                </div>
+
+                <div class="ranking-item">
+                    <span> Grêmio</span>
+                    <strong>5 títulos</strong>
+                </div>
+
+                <div class="ranking-item">
+                    <span> Flamengo</span>
+                    <strong>5 títulos</strong>
+                </div>
+
+                <div class="ranking-item">
+                    <span> Palmeiras</span>
+                    <strong>4 títulos</strong>
+                </div>
+
+                <div class="ranking-item">
+                    <span> Corinthians</span>
+                    <strong>3 títulos</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+        <section id="contato" class="secao contato">
+
+            <h2>Entre em Contato</h2>
+
+            <p>
+                Envie sua dúvida, sugestão ou opinião sobre o site.
+            </p>
+
+            <form id="formulario-contato">
+
+                <label for="nome">Nome:</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    required
+                >
+
+                <label for="email">E-mail:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    required
+                >
+
+                <label for="mensagem">Mensagem:</label>
+
+                <textarea
+                    id="mensagem"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit" class="botao">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+            <p id="mensagem-contato" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+
+    
+    <footer>
+
+        <h3>🏆 Copa do Brasil</h3>
+
+        <p>
+            Projeto acadêmico sobre a história dos campeões da Copa do Brasil.
+        </p>
+
+        <p>
+            Desenvolvido por Gabriel Xavier Vasques
+        </p>
+
+        <p>
+            © 2026 - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+
+:root {
+    --verde: #00875A;
+    --azul: #0B2545;
+    --amarelo: #FFCC00;
+    --prata: #8E9AAF;
+    --fundo: #F8FAFC;
+    --texto: #0F172A;
+    --branco: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--verde);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+.acessibilidade {
+    display: flex;
+    gap: 5px;
+}
+
+.acessibilidade button {
+    background-color: var(--branco);
+    color: var(--azul);
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.acessibilidade button:hover {
+    background-color: var(--amarelo);
+}
+
+body.fonte-grande {
+    font-size: 120%;
+}
+
+body.fonte-pequena {
+    font-size: 85%;
+}
+
+.hero {
+    min-height: 450px;
+    background-color: var(--azul);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-texto {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--amarelo);
+    color: var(--texto);
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.botao:hover,
+.botao:focus {
+    transform: scale(1.03);
+}
+
+.secao,
+.carrossel-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.secao h2,
+.carrossel-section h2 {
+    color: var(--azul);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.descricao {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pesquisa {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 35px;
+    padding: 14px;
+    border: 2px solid var(--prata);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--branco);
+    border-left: 6px solid var(--verde);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: var(--verde);
+    margin-bottom: 10px;
+}
+
+
+.carrossel-section {
+    text-align: center;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: 450px; 
+    overflow: hidden;
+    background-color: var(--azul);
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.ativo {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%; 
+}
+
+.texto-slide {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    text-align: left; 
+    color: var(--branco);
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+
+.texto-slide h2 {
+    color: var(--branco);
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 1.8rem;
+}
+
+.texto-slide p {
+    color: #E2E8F0;
+    font-size: 1rem;
+}
+
+.botoes-carrossel {
+    margin-top: 15px;
+}
+
+.botoes-carrossel button {
+    background-color: var(--verde);
+    color: var(--branco);
+    border: none;
+    padding: 10px 18px;
+    margin: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.botoes-carrossel button:hover {
+    background-color: var(--azul);
+}
+
+
+
+.ranking {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-left: 5px solid var(--amarelo);
+    border-radius: 5px;
+}
+
+
+.contato {
+    max-width: 800px;
+}
+
+.contato > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid var(--prata);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form input:focus,
+form textarea:focus,
+#pesquisa:focus {
+    outline: 3px solid var(--amarelo);
+}
+
+
+
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+
+
+body.dark-mode {
+    --fundo: #0F172A;
+    --texto: #F8FAFC;
+    --branco: #1E293B;
+
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+body.dark-mode .secao h2,
+body.dark-mode .carrossel-section h2 {
+    color: var(--amarelo);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode label {
+    color: var(--texto);
+}
+
+body.dark-mode .card,
+body.dark-mode .ranking-item {
+    background-color: var(--branco);
+    color: var(--texto);
+}
+
+body.dark-mode .card h3 {
+    color: var(--amarelo);
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border-color: var(--prata);
+}
+
+body.dark-mode a {
+    color: var(--amarelo);
+}
+
+body.dark-mode .hero a {
+    color: var(--texto);
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .ranking-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .carrossel,
+    .slide {
+        height: 280px;
+        min-height: 280px;
+    }
+
+    .texto-slide {
+        padding: 15px;
+    }
+}
