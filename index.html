@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -13,7 +12,6 @@
 
 <body>
 
-    
     <header>
 
         <div class="logo">
@@ -22,13 +20,14 @@
 
         <nav>
             <a href="#inicio">Início</a>
+            <a href="#historia">História</a>
+            <a href="#momentos">Momentos Históricos</a>
             <a href="#campeoes">Campeões</a>
             <a href="#ranking">Ranking</a>
             <a href="#contato">Contato</a>
             <a href="login.html">Login</a>
         </nav>
 
-        
         <div class="acessibilidade">
 
             <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
@@ -48,10 +47,8 @@
     </header>
 
 
-    
     <main>
 
-        
         <section id="inicio" class="hero">
 
             <div class="hero-texto">
@@ -73,55 +70,213 @@
         </section>
 
 
-        
-<section class="carrossel-section">
-    <div class="carrossel">
+        <section class="carrossel-section">
+            <div class="carrossel">
 
-        <div class="slide ativo">
-            <img src="img/maracana.webp"
-                 alt="Estádio do Maracanã">
-            <div class="texto-slide">
-                <h2>🏆 Copa do Brasil</h2>
-                <p>Conheça a história dos campeões da competição.</p>
+                <div class="slide ativo">
+                    <img src="img/maracana.webp"
+                         alt="Estádio do Maracanã">
+                    <div class="texto-slide">
+                        <h2>🏆 Copa do Brasil</h2>
+                        <p>Conheça a história dos campeões da competição.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/gremio.jpg"
+                         alt="Grêmio levantando a taça da Copa do Brasil 2016">
+                    <div class="texto-slide">
+                        <h2>Grandes decisões</h2>
+                        <p>Relembre momentos marcantes.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/taca.webp"
+                         alt="Taça da Copa do Brasil">
+                    <div class="texto-slide">
+                        <h2>História dos campeões</h2>
+                        <p>Descubra quais clubes conquistaram a taça.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="botoes-carrossel">
+                <button onclick="slideAnterior()">❮</button>
+                <button onclick="proximoSlide()">❯</button>
+            </div>
+        </section>
+
+
+        <section id="historia" class="secao">
+
+            <h2>História da Copa do Brasil</h2>
+
+            <p class="descricao">
+                Criada em 1989 pela CBF para democratizar o futebol nacional, a competição reúne clubes de todos os estados do país em formato mata-mata.
+            </p>
+
+            <div class="historia-grid">
+
+                <div class="historia-card">
+                    <span class="historia-ano">1989</span>
+                    <h3>O Início da Competição</h3>
+                    <p>
+                        A primeira edição contou com 32 clubes campeões e vices dos campeonatos estaduais. O Grêmio conquistou o título invicto ao vencer o Sport na final.
+                    </p>
+                </div>
+
+                <div class="historia-card">
+                    <span class="historia-ano">2001 – 2012</span>
+                    <h3>Fora da Libertadores</h3>
+                    <p>
+                        Durante 12 anos, devido ao conflito de datas no primeiro semestre, os clubes brasileiros que disputavam a Copa Libertadores não podiam participar da Copa do Brasil no mesmo ano.
+                    </p>
+                </div>
+
+                <div class="historia-card destaque-mudanca">
+                    <span class="historia-ano">2013</span>
+                    <h3>A Grande Mudança de Calendário</h3>
+                    <p>
+                        Em <strong>2013</strong>, a competição mudou de formato e passou a ser disputada ao longo de todo o ano (de março a novembro), permitindo o retorno dos times da Libertadores e ampliando o torneio para mais de 80 clubes.
+                    </p>
+                </div>
+
+                <div class="historia-card">
+                    <span class="historia-ano">2018 – Atualidade</span>
+                    <h3>Fim do Gol Fora e Premiação Recorde</h3>
+                    <p>
+                        A partir de 2018, o critério de desempate por gol marcado fora de casa foi extinto, aumentando as decisões nos pênaltis e consolidando o torneio como o mais lucrativo do país.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+   <section id="momentos" class="secao">
+
+    <h2>Momentos Históricos</h2>
+
+    <p class="descricao">
+        Viradas épicas, finais eletrizantes e decisões que marcaram para sempre a história da Copa do Brasil.
+    </p>
+
+    <div class="curiosidades-grid">
+
+        <div class="curiosidade-item">
+            <img src="img/momento-1989.jpg" alt="Grêmio campeão em 1989" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>O Primeiro Campeão Invicto (1989)</h3>
+                <p>
+                    Na edição de estreia do torneio, o <strong>Grêmio</strong> levantou a taça sem perder nenhuma partida. Depois de empatar por 0 a 0 fora de casa com o Sport, venceu por 2 a 1 no Olímpico com gol decisivo de Cuca.
+                </p>
             </div>
         </div>
 
-        
-        <div class="slide">
-            <img src="img/gremio.jpg"
-                 alt="Grêmio levantando a taça da Copa do Brasil 2016">
-            <div class="texto-slide">
-                <h2>Grandes decisões</h2>
-                <p>Relembre  momentos marcantes.</p>
+        <div class="curiosidade-item">
+            <img src="img/momento-1997.jpg" alt="Grêmio no Maracanã em 1997" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>O Grêmio Faz a Festa no Maracanã (1997)</h3>
+                <p>
+                    Diante de mais de 95 mil torcedores do Flamengo no Maracanã, o <strong>Grêmio</strong> empatou um jogaço por 2 a 2 — com gol decisivo de Carlos Miguel nos minutos finais — e conquistou o tricampeonato invicto pelo critério do gol marcado fora de casa.
+                </p>
             </div>
         </div>
 
-        <
-        <div class="slide">
-            <img src="img/taca.webp"
-                 alt="Taça da Copa do Brasil">
-            <div class="texto-slide">
-                <h2>História dos campeões</h2>
-                <p>Descubra quais clubes conquistaram a taça.</p>
+        <div class="curiosidade-item">
+            <img src="img/momento-1998.jpg" alt="Palmeiras campeão em 1998" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>A Virada do Palmeiras sobre o Cruzeiro (1998)</h3>
+                <p>
+                    Depois de perder o primeiro jogo por 1 a 0 no Mineirão, o <strong>Palmeiras</strong> venceu por 2 a 0 no Morumbi com um gol de falta histórico de Oséas quase sem ângulo no final da partida.
+                </p>
+            </div>
+        </div>
+
+        <div class="curiosidade-item">
+            <img src="img/momento-2004.jpg" alt="Santo André campeão no Maracanã em 2004" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>O Santo André Calando o Maracanã (2004)</h3>
+                <p>
+                    Disputando a Série B na época, o <strong>Santo André</strong> protagonizou uma das maiores surpresas do futebol brasileiro ao derrotar o Flamengo por 2 a 0 em pleno Maracanã, após empate por 2 a 2 no jogo de ida.
+                </p>
+            </div>
+        </div>
+
+        <div class="curiosidade-item">
+            <img src="img/momento-2008.jpg" alt="Sport campeão em 2008" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>A Virada do Sport na Ilha do Retiro (2008)</h3>
+                <p>
+                    Após perder por 3 a 1 para o Corinthians no Morumbi, o <strong>Sport</strong> precisava vencer sem sofrer gols em casa. O triunfo por 2 a 0 no Recife deu ao clube pernambucano seu primeiro título nacional pelo critério do gol fora de casa.
+                </p>
+            </div>
+        </div>
+
+        <div class="curiosidade-item">
+            <img src="img/momento-2014.jpg" alt="Atlético-MG campeão em 2014" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>As Viradas Épicas do Atlético-MG (2014)</h3>
+                <p>
+                    O <strong>Atlético-MG</strong> protagonizou uma campanha cinematográfica ao reverter duas derrotas de 2 a 0 — primeiro contra o Corinthians nas quartas e depois contra o Flamengo na semifinal — vencendo ambos os jogos de volta por 4 a 1 no Mineirão antes de derrotar o rival Cruzeiro na final.
+                </p>
+            </div>
+        </div>
+
+        <div class="curiosidade-item">
+            <img src="img/momento-2015.jpg" alt="Palmeiras campeão nos pênaltis em 2015" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>Clássico Paulista nos Pênaltis (2015)</h3>
+                <p>
+                    Em uma decisão tensa no Allianz Parque, o <strong>Palmeiras</strong> devolveu o placar contra o Santos vencendo por 2 a 1 no tempo normal e garantiu o tricampeonato nas penalidades, com defesa e cobrança decisiva do goleiro Fernando Prass.
+                </p>
+            </div>
+        </div>
+
+        <div class="curiosidade-item">
+            <img src="img/momento-2016.webp" alt="Grêmio campeão em 2016" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>O Fim do Jejum de 15 Anos do Grêmio (2016)</h3>
+                <p>
+                    Comandado por Renato Portaluppi, o <strong>Grêmio</strong> quebrou um longo jejum de títulos nacionais ao atropelar o Atlético-MG por 3 a 1 no Mineirão e confirmar o pentacampeonato com empate por 1 a 1 na Arena.
+                </p>
+            </div>
+        </div>
+
+        <div class="curiosidade-item">
+            <img src="img/momento-2017.jpg" alt="Cruzeiro campeão em 2017" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>A Muralha Fábio e o Penta do Cruzeiro (2017)</h3>
+                <p>
+                    Após dois empates (1 a 1 no Maracanã e 0 a 0 no Mineirão), o <strong>Cruzeiro</strong> superou o Flamengo nos pênaltis por 5 a 3, com defesa decisiva do goleiro Fábio na cobrança de Diego.
+                </p>
+            </div>
+        </div>
+
+        <div class="curiosidade-item">
+            <img src="img/momento-2023.jpg" alt="São Paulo campeão em 2023" class="curiosidade-foto" onerror="this.src='img/taca.webp'">
+            <div class="curiosidade-texto">
+                <h3>O Título Inédito do São Paulo (2023)</h3>
+                <p>
+                    Após décadas buscando a única taça que faltava em sua galeria, o <strong>São Paulo</strong> venceu o Flamengo por 1 a 0 no Maracanã e segurou o empate por 1 a 1 no Morumbi com um golaço de Rodrigo Nestor nos acréscimos do primeiro tempo.
+                </p>
             </div>
         </div>
 
     </div>
 
-    <div class="botoes-carrossel">
-        <button onclick="slideAnterior()">❮</button>
-        <button onclick="proximoSlide()">❯</button>
-    </div>
 </section>
 
 
-    
         <section id="campeoes" class="secao">
 
             <h2>Histórico de Campeões</h2>
 
             <p class="descricao">
-                Pesquise pelo nome de um clube ou pelo ano da conquista.
+                Pesquise pelo nome de um clube ou pelo ano da conquista. Clique em qualquer edição para ver os placares e a foto do campeão.
             </p>
 
             <input
@@ -361,7 +516,6 @@
         </section>
 
 
-        
         <section id="ranking" class="secao">
 
             <h2>Ranking de Títulos</h2>
@@ -398,7 +552,6 @@
         </section>
 
 
-        
         <section id="contato" class="secao contato">
 
             <h2>Entre em Contato</h2>
@@ -446,7 +599,35 @@
     </main>
 
 
-    
+    <div id="modal-campeao" class="modal" onclick="fecharModalFora(event)">
+        <div class="modal-conteudo">
+            <button class="fechar-modal" onclick="fecharModal()" aria-label="Fechar janela">✖</button>
+            <span class="modal-badge">FINAL HISTÓRICA</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-subtitulo" class="modal-subtitulo"></p>
+
+            <img id="modal-foto" src="" alt="Foto do time campeão" class="foto-campeao-modal">
+
+            <div class="modal-jogos">
+                <div class="jogo-box">
+                    <span>PRIMEIRO JOGO</span>
+                    <strong id="modal-ida"></strong>
+                </div>
+                <div class="jogo-box">
+                    <span>SEGUNDO JOGO</span>
+                    <strong id="modal-volta"></strong>
+                </div>
+            </div>
+
+            <div class="modal-agregado">
+                <span>RESULTADO AGREGADO</span>
+                <strong id="modal-placar-agregado"></strong>
+                <small id="modal-detalhe"></small>
+            </div>
+        </div>
+    </div>
+
+
     <footer>
 
         <h3>🏆 Copa do Brasil!!</h3>
